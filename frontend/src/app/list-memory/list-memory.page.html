@@ -1,0 +1,54 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Memories Travel</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let b of memories">
+      <ion-avatar slot="start">
+        <img
+          *ngIf="b.filename"
+          src="http://localhost:8080/images/{{b.filename}}"
+          alt="Memory image"
+        />
+      </ion-avatar>
+      <ion-label>
+        <h1>{{b.place}}</h1>
+        <p>{{b.date | date: 'd MMM yyyy'}}</p>
+        <p>{{b.description}}</p>
+      </ion-label>
+      <ion-button (click)="deleteMemory(b.id)">Borrar</ion-button>
+      <ion-button (click)="editMemory(b.id)">Editar</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="addMemory()">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content> -->
+
+<div class="card-container">
+<div *ngFor="let b of memories">
+  <div class="card">
+    <div class="card-image">
+      <img
+        *ngIf="b.filename"
+        src="http://localhost:8080/images/{{b.filename}}"
+        alt="Memory image"
+      />
+    </div>
+    <p class="card-title">{{b.place}}</p>
+    <a class="card-body">{{b.description}}</a>
+    <p class="card-date">{{b.date | date: 'd MMM yyyy'}}</p>
+  </div>
+</div>
+</div>
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button (click)="addMemory()">
+    <ion-icon name="add-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
