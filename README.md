@@ -8,27 +8,27 @@ Follow the steps below to get the Memories Travel app running in your environmen
 
 Clone this repository.
 
-\```
+```
 git clone (https://github.com/kirianVazqq/Memories-Travel.git)
-\```
+```
 
 Set up your desired database and configure it in `memories-travel/backend/config/db.config.js`.
 
 Install dependencies and start the backend server:
 
-\```
+```
 cd memories-travel/backend
 npm install
 node index.js
-\```
+```
 
 Install frontend dependencies and initiate:
 
-\```
+```
 cd memories-travel/frontend
 npm install
 npm start
-\```
+```
 
 Start your journey and keep your memories alive!
 
